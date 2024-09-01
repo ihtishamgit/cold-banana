@@ -17,3 +17,8 @@
     flex-direction: column;
     justify-content: space-between;
 }
+
+.error{
+    margin-bottom: 20rem;
+
+}
