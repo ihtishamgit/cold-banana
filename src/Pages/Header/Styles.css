@@ -1,0 +1,76 @@
+.hero-banner {
+  height: 108.7vh;
+  background-image: url("../../Assets/Header/hero-banner.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.nav-vector-left {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+}
+
+.header-vector-right {
+  position: absolute;
+  z-index: 1;
+  top: 20%;
+  right: 0;
+}
+
+.hero-banner-content {
+  position: absolute;
+  top: 50%;
+  left: 45%;
+  transform: translate(-50%, -45%);
+  z-index: 3;
+}
+.hero-banner-content div {
+  display: flex;
+  flex-direction: column;
+  font-weight: 700;
+  font-size: 3.5rem;
+  line-height: 1.5;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.read-more-btn {
+  background: linear-gradient(90deg, #73e0a9 0%, #5b68df 100%);
+  border-radius: 100px;
+  height: 3.75rem;
+  width: 16rem;
+  border: none;
+  font-weight: 600;
+  font-size: 1rem;
+  color: var(--white);
+  line-height: 2rem;
+  margin-top: 0.8rem;
+}
+
+
+@media screen and (max-width: 992px) {
+  .hero-banner-content div {
+  font-size: 2.5rem;}
+  .nav-vector-left {
+    width: 30rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .nav-vector-left {
+   display: none;
+  }
+  .hero-banner-content div {
+    font-size: 2rem;
+  }
+  .hero-banner {
+height: 60vh;
+  }
+  .read-more-btn {
+    height: 2.75rem;
+    width: 11rem;
+  }
+}

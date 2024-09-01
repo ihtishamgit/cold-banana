@@ -1,0 +1,19 @@
+@import "../Components/Navbar/Styles.css";
+@import "../Pages/Header/Styles.css";
+@import "../Pages/ProductDetail/Styles.css";
+@import "../Pages/ProductList/Styles.css";
+@import "../Pages/Footer/Styles.css";
+
+.cursor-pointer{
+    cursor: pointer;
+}
+
+.font-weight-700{
+    font-weight: 700;
+}
+
+.flex-col{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}

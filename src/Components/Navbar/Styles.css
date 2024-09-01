@@ -1,0 +1,121 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 85%; 
+  margin: 2rem auto 1rem auto;
+}
+.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  z-index: 3;
+}
+
+.topnav li a {
+  display: block;
+  color: var(--black);
+  text-align: center;
+  padding: 0rem 1rem;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.navbar h1 {
+  font-weight: 700;
+  font-size: 2rem;
+  text-transform: uppercase;
+  z-index: 3;
+  color: var(--white);
+  white-space: nowrap;
+}
+
+.btn-small {
+  background: linear-gradient(90deg, #73e0a9 0%, #5b68df 100%);
+  border-radius: 100px;
+  height: 2.5rem;
+  width: 10rem;
+  border: none;
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: var(--white);
+}
+
+.btn-spacing{
+  margin-left: 6rem;
+}
+
+.hamburger-menu-icon{
+  width: 2rem;
+  height: 2rem;
+  visibility: hidden;
+  cursor: pointer;
+}
+.close-icon{
+  width: 2rem;
+  height: 2rem;
+  visibility: hidden;
+  cursor: pointer;
+}
+.navbar-mobile {
+  display: flex;
+  width: 100%; 
+}
+.mobile-nav{
+  display: none;
+  z-index: 5;
+}
+.btn-spacing-mobile{
+margin-left: 0rem !important;
+}
+
+@media screen and (max-width: 992px) {
+  .topnav{
+    display: none;
+  }
+  .navbar h1 {
+    font-size: 1.5rem;
+  }
+  .mobile-nav{
+    display: flex !important;
+    flex-direction: column !important;
+    position: absolute;
+    width: 100%;
+    background: linear-gradient(90deg, #73E0A9 0%, #5B68DF 100%);
+    height: 70vh;
+    justify-content: space-evenly;
+  }
+  .mobile-nav li a{
+    color: var(--white);
+  }
+  .hamburger-menu-icon{
+    visibility: visible;
+  }
+  .close-icon{
+    visibility: visible;
+  }
+}
+
+@media screen and (max-width: 768px) {
+.header-vector-right{
+  display: none;
+}
+.header-vector-right{
+  display: none;
+}
+}
+
+
+@media screen and (max-width: 600px) {
+  .navbar h1 {
+    background: -webkit-linear-gradient(#73e0a9, #5b68df);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
